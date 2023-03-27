@@ -36,7 +36,7 @@ function getCountryName(name) {
           'Too many matches found. Please enter a more specific name.'
         );
       }
-      if (2 < countries.length < 10) {
+      if (2 <= countries.length >= 10) {
         renderCountryList(countries);
       }
       if (countries.length === 1) {
